@@ -1,0 +1,295 @@
+{
+  "id": "wporg",
+  "viewports": [
+    {
+      "label": "Desktop FHD",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "WordPress.org Homepage",
+      "url": "https://wordpress.org/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 500,
+      "hideSelectors": [ ".notable-users img" ],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "WordPress.org Downloads",
+      "url": "https://wordpress.org/downloads/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 500,
+      "hideSelectors": [],
+      "removeSelectors": [ "#hosting .host" ],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "WordPress.org Gutenberg Homepage",
+      "url": "https://wordpress.org/gutenberg/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": ".block-editor-block-list__block",
+      "delay": 5000,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Make WordPress.org Homepage",
+      "url": "https://make.wordpress.org/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 5000,
+      "hideSelectors": [],
+      "removeSelectors": [ "article .team-meeting" ],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "WordPress.org Themes Homepage",
+      "url": "https://wordpress.org/themes/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 500,
+      "hideSelectors": [ ".themes .theme-screenshot img", ".themes .theme-name" ],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "WordPress.org Themes: Singular",
+      "url": "https://wordpress.org/themes/twentytwentytwo/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 10000,
+      "hideSelectors": [],
+      "removeSelectors": [ ".theme-patterns", ".theme-downloads" ],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "WordPress.org Plugins Homepage",
+      "url": "https://wordpress.org/plugins/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 500,
+      "hideSelectors": [],
+      "removeSelectors": [ "#main > section:first-of-type article" ],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "WordPress.org Plugins: Hello Dolly",
+      "url": "https://wordpress.org/plugins/hello-dolly/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 500,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "WordPress.org Support: Homepage",
+      "url": "https://wordpress.org/support/",
+      "delay": 500,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "WordPress.org Support: Singular Thread",
+      "url": "https://wordpress.org/support/topic/read-this-first-wordpress-6-0/",
+      "delay": 3000,
+      "hideSelectors": [],
+      "removeSelectors": [ ".bbp-topic-post-date", ".bbp-reply-post-date", ".topic-freshness-time", ".topic-freshness-author", ".bbp-topic-revision-log" ],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "WordPress.org Support: Guidelines",
+      "url": "https://wordpress.org/support/guidelines/",
+      "delay": 500,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "WordPress.org News: Homepage",
+      "url": "https://wordpress.org/news/",
+      "delay": 2500,
+      "hideSelectors": [ ".front__people-of-wordpress .wp-block-post-featured-image" ],
+      "removeSelectors": [],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "WordPress.org News: Singular",
+      "url": "https://wordpress.org/news/2022/07/wordpress-6-0-1-maintenance-release/",
+      "delay": 500,
+      "hideSelectors": [],
+      "removeSelectors": [ ".jetpack-likes-widget-wrapper" ],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "API: Plugins Info endpoint",
+      "url": "https://api.wordpress.org/plugins/info/1.0/hello-dolly.json",
+      "delay": 500,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true,
+      "viewports": [
+        {
+          "label": "Desktop",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "label": "API: Themes Info endpoint",
+      "url": "https://api.wordpress.org/themes/info/1.2/?action=theme_information&request[slug]=twentytwentytwo",
+      "delay": 500,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true,
+      "viewports": [
+        {
+          "label": "Desktop",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "label": "API: Core version check",
+      "url": "https://api.wordpress.org/core/version-check/1.7/",
+      "delay": 500,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true,
+      "viewports": [
+        {
+          "label": "Desktop",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "label": "Trac: Meta Homepage",
+      "url": "https://meta.trac.wordpress.org/",
+      "delay": 500,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Trac: Meta Ticket #1",
+      "url": "https://meta.trac.wordpress.org/ticket/1",
+      "delay": 500,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "json_report": "backstop_data/json_report"
+  },
+  "report": ["browser","json"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 10,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

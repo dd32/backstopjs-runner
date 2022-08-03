@@ -1,0 +1,16 @@
+#!/bin/sh
+cd "$(dirname "$0")"
+
+command="docker run --rm -v $(pwd):/src backstopjs/backstopjs"
+
+if [ "test" = "$1" ]; then
+	$command "$@" || $command "$@"
+	rm -f .test-again
+
+elif [ "approve" = "$1" ]; then
+	$command "$@" && $command test
+	rm -f .action-approve
+
+else
+	$command "$@"
+fi
